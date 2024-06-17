@@ -1,0 +1,545 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Rajat</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Oswald:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<style type="text/css">
+    body {
+        margin: 0 auto;
+    }
+
+    body p {
+        margin: 0;
+    }
+
+    nav {
+        background-color: rgba(27, 34, 9, 0.31);
+        /*        #1b2209*/
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'oswald', sans-serif;
+        font-weight: 400;
+        color: #f8fff8;
+    }
+
+    #nav_options {
+        margin: 10px;
+    }
+
+    #nav_options a {
+        padding: 6px;
+        -webkit-transition: color 0.4s linear;
+        transition: color 0.5s linear;
+        transition: border 0.2s ease;
+    }
+
+    #nav_options a:hover {
+        color: #F6FEDB;
+        border-bottom: 3px solid #f6fedb;
+    }
+
+
+    #land_page {
+        background-image: url(star-trails-1846734.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+
+    #layer {
+        background-color: rgba(73, 101, 6, 0.75);
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #layer div {
+        color: #f8fff8;
+        font-size: 83px;
+        font-family: 'Roboto', sans-serif;
+        width: 50%;
+        margin: 90px 40px;
+    }
+
+
+    .subheading {
+        font-size: 16px;
+        padding: 40px 0;
+        letter-spacing: 2.5px;
+    }
+
+    button {
+        color: #f6fedb;
+        background-color: #1b2209;
+        border: 1px solid #f8fff8;
+        padding: 12px 36px;
+        font-size: 14px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #image {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        border: 2px solid #f6fedb;
+        background-image: url(man-791049_640.jpg);
+        background-size: cover;
+        margin: 0 auto !important;
+    }
+
+    #rightdiv {
+        margin-top: 130px !important;
+    }
+
+    .subsect {
+        background-color: #f8fbed;
+        margin: 80px 40px;
+        box-shadow: 5px 5px 30px 10px #f6fedb;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding: 40px 40px;
+    }
+
+    .sectname {
+        font-family: 'Oswald', sans-serif;
+        font-size: 36px;
+        font-weight: 800;
+        padding-bottom: 40px;
+    }
+
+    .flett {
+        border-top: 6px solid #7a9c29;
+    }
+
+    .content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row;
+        gap: 8%;
+        padding-bottom: 40px;
+        letter-spacing: 0.9px;
+        line-height: 1.6;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .content img {
+        max-height: 300px;
+        margin: 0 auto;
+        padding: 0;
+        border: 5px solid rgba(122, 156, 41, 0.38);
+    }
+
+    .ed {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .detcarded {
+        width: 46%;
+        background-color: rgba(246, 254, 219, 0.35);
+        margin: 25px 5px;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px;
+        box-shadow: 3px 3px 20px 1px rgba(27, 34, 9, 0.63);
+    }
+
+    .limg {
+        width: 30%;
+        height: 100%;
+        background-image: url(man-597178_640.jpg);
+        background-size: cover;
+    }
+
+    .rc {
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px;
+    }
+
+    .cardhd {
+        color: #1b2209;
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    .cardsub {
+        color: #7a9c29;
+        font-weight: 600;
+    }
+
+    .cont {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+    .cardwo {
+        width: 43%;
+        background-color: rgba(246, 254, 219, 0.35);
+        margin: 25px 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 20px;
+        box-shadow: 3px 3px 20px 1px rgba(27, 34, 9, 0.63);
+    }
+
+    .wo {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 4%;
+        width: 100%;
+    }
+
+    .leimg {
+        background-image: url(library-869061_1280.jpg);
+        width: 50%;
+        background-size: cover;
+        border: 3px solid rgba(122, 156, 41, 0.38);
+    }
+
+    .top {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1%;
+    }
+
+    .rc p {
+        padding: 2px 0;
+    }
+
+    .dcol {
+        color: #1b2209;
+        padding-right: 5px;
+    }
+
+    .contwo {
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    .worc {
+        padding: 10px 5px;
+    }
+
+
+    .sqbox {
+        width: 35vh;
+        height: 20vh;
+        background-color: rgba(157, 216, 16, 0.72);
+        margin: 0 !important;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        color: #f8fff8;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .tops {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 2%;
+        margin: 0 !important;
+    }
+
+    .sqbox i {
+        font-size: 30px;
+    }
+
+    .footer {
+        background-color: #1b2209;
+        margin: 0 !important;
+        color: #f8fff8;
+        font-size: 18px;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 10px;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .content button {
+        margin-top: 20px;
+    }
+
+    i {
+        margin: 4px;
+    }
+
+    .shndl {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-size: 12px;
+        padding-top: 2px;
+        word-spacing: 3px;
+    }
+
+    .footer i {
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #f8fff8;
+        color: #1b2209;
+        border: 1px solid #1b2209;
+    }
+
+    button {
+        transition: all 0.4s linear;
+    }
+
+    .sqbox:hover {
+        background-color: #1b2209 !important;
+        color: #f8fff8 !important;
+        box-shadow: 3px 3px 20px #c6b6f2 !important;
+    }
+
+    .sqbox {
+        transition: all 0.7s linear;
+        cursor: pointer;
+    }
+
+    .footer i:hover {
+        color: #7a9c29;
+        transform: scale(1.3);
+    }
+
+    #aws {
+        background-color: orange;
+    }
+
+    #js {
+        background-color: yellow;
+        color: #1b2209;
+    }
+
+    #bsp {
+        background-color: purple;
+    }
+
+    #db {
+        background-color: aliceblue;
+        color: #1b2209;
+    }
+
+    #fgm {
+        background-color: black;
+    }
+
+    #fgm:hover {
+        background-color: #7a9c29 !important;
+    }
+
+    #bbps {
+        background-image: url(man-791049_640.jpg);
+    }
+
+    #dps {
+        background-image: url(team-386673_1280.jpg);
+    }
+
+    #ihs {
+        background-image: url(working-791849_1280.jpg);
+    }
+
+    #vit {
+        background-image: url(student-849822_1280.jpg);
+    }
+
+    #sap {
+        background-image: url(code-1839406_1280.jpg);
+    }
+
+    #sch {
+        background-image: url(keyboard-5017973_1280.jpg);
+    }
+
+    .cardwo:hover {
+        transform: scale(1.03);
+    }
+
+    .detcarded:hover {
+        transform: scale(1.03)
+    }
+
+    .cardwo,
+    .detcarded {
+        transition: all 0.7s ease-in-out;
+    }
+
+    /*F6FEDB - LIGHT GREEEN
+    7A9C29 - DARK GREEN
+    F8FBED - LIGHT GREY
+    F8FFF8 - LIGHT BLUE*/
+
+</style>
+
+<body>
+    <div id="container">
+        <nav>
+            <div id="nav_options">
+                <a href="">Home</a>
+                <a href="#ab">About Me</a>
+                <a href="#ed">Education</a>
+                <a href="#sk">Skills</a>
+                <a href="#we">Work Experience</a>
+                <a href="#cm">Contact Me</a>
+            </div>
+        </nav>
+        <div id="land_page">
+            <div id="layer">
+                <div>
+                    <p>Hello <br> I am <br>Rajat Agrawal !</p>
+                    <p class="subheading">A Curious Engineer striving to Innovate.</p>
+                    <button>Know More </button>
+                </div>
+                <div id="rightdiv">
+                    <div id="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="subsect">
+            <p class="sectname" id="ab"><span class="flett">Ab</span>out Me</p>
+            <div class="content">
+                <div>
+                    <p>Enveloped in the hallowed halls of VIT, Vellore, I, a diligent and visionary student, ardently tread the path of Integrated M.Tech in Software Engineering. My fervent curiosity, akin to a relentless flame, fuels an insatiable appetite for innovation and the art of coding. Possessing an innate gift for leadership, I orchestrate endeavors with a deft touch, guiding fellow learners toward excellence. This perpetual quest for knowledge is a beacon that guides me through the labyrinth of academia, while my affable demeanor and geniality serve as a harmonious melody in the symphony of interactions. As I traverse this scholastic odyssey, I remain steadfast in my commitment to absorbing skills, honing talents, and crafting an indelible mark upon the canvas of tomorrow's technological landscape. </p>
+                    <button>Resume <i class="fa-solid fa-download"></i></button>
+                </div>
+                <img src="laptop-2557576_1280.jpg" />
+            </div>
+        </div>
+        <div class="subsect">
+            <p class="sectname" id="ed"><span class="flett">Ed</span>ucation</p>
+            <div class="content ed">
+                <div class="detcarded">
+                    <div class="limg" id="bbps"></div>
+                    <div class="rc">
+                        <p class="cardhd">Bharat Bharati Public School, Godda</p>
+                        <p class="cardsub">From 2007 - 2012</p>
+                        <p class="cont">I embarked on my educational journey at Bharat Bharati Public School, Godda. Throughout those years, my innate intuitiveness guided me, allowing me to navigate challenges with keen discernment. This early chapter in my education laid the foundation for my current pursuit of innovation.</p>
+                    </div>
+                </div>
+                <div class="detcarded">
+                    <div class="limg" id="dps"></div>
+                    <div class="rc">
+                        <p class="cardhd">Delhi Public School, Ranchi</p>
+                        <p class="cardsub">From 2013 - 2018</p>
+                        <p class="cont">My tenure at Delhi Public School Ranchi from 2013 to 2018 was an invaluable phase of growth and learning. The school's nurturing environment nurtured both my academic and personal development, instilling in me a lifelong passion for learning and a drive for excellence.</p>
+                    </div>
+                </div>
+                <div class="detcarded">
+                    <div class="limg" id="ihs"></div>
+                    <div class="rc">
+                        <p class="cardhd">Indian Heritage School, Deoghar</p>
+                        <p class="cardsub">From 2019 - 2022</p>
+                        <p class="cont">My 9th to 12th grade years at Indian Heritage School under the CBSE Board marked a pivotal phase of my education. During this time, I experienced significant personal and academic growth, fostering a strong foundation for my ongoing pursuit of innovation and learning.</p>
+                    </div>
+                </div>
+                <div class="detcarded">
+                    <div class="limg" id="vit"></div>
+                    <div class="rc">
+                        <p class="cardhd">Vellore Institute Technology, Vellore</p>
+                        <p class="cardsub">From 2022 - Till Date</p>
+                        <p class="cont">At VIT, Vellore, my engineering journey has been a transformative experience. Surrounded by a dynamic learning atmosphere, I've honed technical expertise, embraced innovation, and nurtured leadership skills, preparing me for a successful future in the engineering realm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subsect">
+            <p class="sectname" id="sk"><span class="flett">S</span>kills</p>
+
+            <div class="tops">
+                <div class="sqbox"><i class="fa-brands fa-android"></i>
+                    <p>Android</p>
+                </div>
+                <div class="sqbox" id="aws"><i class="fa-brands fa-aws"></i>
+                    <p>Web Development</p>
+                </div>
+                <div class="sqbox" id="js"><i class="fa-brands fa-square-js"></i>
+                    <p>JS</p>
+                </div>
+                <div class="sqbox" id="bsp"><i class="fa-brands fa-bootstrap"></i>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="sqbox" id="db"><i class="fa-solid fa-database"></i>
+                    <p>Database</p>
+                </div>
+                <div class="sqbox" id="fgm"><i class="fa-brands fa-figma"></i>
+                    <p>Design</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="subsect">
+            <p class="sectname" id="we"><span class="flett">W</span>ork Experience</p>
+            <div class="content wo">
+                <div class="cardwo">
+                    <div class="top">
+                        <div class="leimg" id="sap"></div>
+                        <div class="rc worc">
+                            <p class="cardhd">My SAP Skills</p>
+                            <p class="cardsub"><span class="dcol">Role:</span> Intern</p>
+                            <p class="cardsub"><span class="dcol">Experience:</span>2 Years</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p class="cont contwo">During my tenure as a course material designer and graphic editor at MY SAP Skills, I undertook a transformative journey that not only honed my creative prowess but also immersed me in the intricate domain of success. Within this role, I meticulously crafted educational content that harmonized compelling visuals with informative text, thus actively contributing to the learning experiences of others. This dynamic experience allowed me to cultivate a nuanced understanding of design principles, refine my communication skills, and delve deeply into the art of content creation. Through these multifaceted endeavors, I propelled myself into a realm of accomplishment, equipping myself with a diverse skill set that extends far beyond my internship's horizon.</p>
+                    </div>
+                </div>
+                <div class="cardwo">
+                    <div class="top">
+                        <div class="leimg" id="sch"></div>
+                        <div class="rc worc">
+                            <p class="cardhd">Schnieder Electric</p>
+                            <p class="cardsub"><span class="dcol">Role:</span> Intern</p>
+                            <p class="cardsub"><span class="dcol">Experience:</span>6 Months</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p class="cont contwo">My role as a software designer at Schneider Electric was a dynamic and enriching chapter in my professional journey. Within this position, I was entrusted with the intricate task of conceptualizing and crafting innovative software solutions that seamlessly integrated with the company's technological ecosystem. Through meticulous coding, problem-solving, and collaboration with cross-functional teams, I not only contributed to enhancing the company's products but also deepened my understanding of software architecture and development practices. This role not only refined my technical prowess but also fortified my ability to thrive in a fast-paced and innovative corporate environment, marking a significant milestone in my career trajectory.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="subsect footer">
+            <div class="shndl" id="cm"><i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-whatsapp"></i><i class="fa fa-snapchat"></i><i class="fa fa-envelope"></i></div>
+            <p>Made With <i class="fa fa-heart"></i> Love By Rajat Agrawal</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b88b3708b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
